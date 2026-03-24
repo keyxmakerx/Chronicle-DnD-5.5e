@@ -1,0 +1,41 @@
+[
+  {
+    "id": "human",
+    "name": "Human",
+    "summary": "The most adaptable and ambitious people among the common races.",
+    "description": "Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+    "properties": {
+      "speed": "30 ft.",
+      "size": "Medium",
+      "ability_bonuses": "+1 to all ability scores"
+    },
+    "tags": ["humanoid", "versatile"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "elf",
+    "name": "Elf",
+    "summary": "A slender, graceful people with a deep connection to magic and nature.",
+    "description": "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light.",
+    "properties": {
+      "speed": "30 ft.",
+      "size": "Medium",
+      "ability_bonuses": "+2 Dexterity"
+    },
+    "tags": ["humanoid", "fey-ancestry", "darkvision"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "dwarf",
+    "name": "Dwarf",
+    "summary": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone.",
+    "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller.",
+    "properties": {
+      "speed": "25 ft.",
+      "size": "Medium",
+      "ability_bonuses": "+2 Constitution"
+    },
+    "tags": ["humanoid", "darkvision", "resilience"],
+    "source": "SRD 5.1"
+  }
+]

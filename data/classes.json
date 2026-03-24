@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fighter",
+    "name": "Fighter",
+    "summary": "A master of martial combat, skilled with a variety of weapons and armor.",
+    "description": "Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor.",
+    "properties": {
+      "hit_die": "d10",
+      "primary_ability": "Strength or Dexterity",
+      "saving_throws": "Strength, Constitution"
+    },
+    "tags": ["martial", "versatile"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "wizard",
+    "name": "Wizard",
+    "summary": "A scholarly magic-user capable of manipulating the structures of reality.",
+    "description": "Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control.",
+    "properties": {
+      "hit_die": "d6",
+      "primary_ability": "Intelligence",
+      "saving_throws": "Intelligence, Wisdom"
+    },
+    "tags": ["arcane", "spellcaster"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "cleric",
+    "name": "Cleric",
+    "summary": "A priestly champion who wields divine magic in service of a higher power.",
+    "description": "Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. A cleric is imbued with divine magic.",
+    "properties": {
+      "hit_die": "d8",
+      "primary_ability": "Wisdom",
+      "saving_throws": "Wisdom, Charisma"
+    },
+    "tags": ["divine", "spellcaster", "healer"],
+    "source": "SRD 5.1"
+  }
+]

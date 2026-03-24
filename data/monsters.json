@@ -1,0 +1,50 @@
+[
+  {
+    "id": "goblin",
+    "name": "Goblin",
+    "summary": "Small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings.",
+    "description": "Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large numbers to torment other creatures.",
+    "properties": {
+      "cr": "1/4",
+      "type": "Humanoid (goblinoid)",
+      "size": "Small",
+      "alignment": "Neutral Evil",
+      "hp": "7 (2d6)",
+      "ac": "15 (leather armor, shield)"
+    },
+    "tags": ["humanoid", "goblinoid", "low-cr"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "adult-red-dragon",
+    "name": "Adult Red Dragon",
+    "summary": "The most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards.",
+    "description": "The most covetous of the true dragons, red dragons are also the most feared. They are vain, cunning, and terrible. Red dragons are fiercely territorial and will burn anything they perceive as a threat to their dominion.",
+    "properties": {
+      "cr": "17",
+      "type": "Dragon",
+      "size": "Huge",
+      "alignment": "Chaotic Evil",
+      "hp": "256 (19d12 + 133)",
+      "ac": "19 (natural armor)"
+    },
+    "tags": ["dragon", "high-cr", "fire"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "skeleton",
+    "name": "Skeleton",
+    "summary": "Animated bones of the dead, compelled to serve by dark magic.",
+    "description": "Skeletons arise when animated by dark magic. They obey the orders of their creator and can be made to guard locations, carry items, or attack enemies.",
+    "properties": {
+      "cr": "1/4",
+      "type": "Undead",
+      "size": "Medium",
+      "alignment": "Lawful Evil",
+      "hp": "13 (2d8 + 4)",
+      "ac": "13 (armor scraps)"
+    },
+    "tags": ["undead", "low-cr"],
+    "source": "SRD 5.1"
+  }
+]

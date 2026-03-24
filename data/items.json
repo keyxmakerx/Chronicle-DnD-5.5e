@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bag-of-holding",
+    "name": "Bag of Holding",
+    "summary": "This bag has an interior space considerably larger than its outside dimensions.",
+    "description": "This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents.\n\nPlacing a bag of holding inside an extradimensional space created by a Heward's handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane.",
+    "properties": {
+      "rarity": "Uncommon",
+      "type": "Wondrous Item",
+      "attunement": "No"
+    },
+    "tags": ["wondrous-item", "utility", "storage"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "flame-tongue",
+    "name": "Flame Tongue",
+    "summary": "A magic sword that bursts into flame on command, dealing extra fire damage.",
+    "description": "You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
+    "properties": {
+      "rarity": "Rare",
+      "type": "Weapon",
+      "attunement": "Yes"
+    },
+    "tags": ["weapon", "fire", "damage"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "potion-of-healing",
+    "name": "Potion of Healing",
+    "summary": "A character who drinks this potion regains 2d4 + 2 hit points.",
+    "description": "You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
+    "properties": {
+      "rarity": "Common",
+      "type": "Potion",
+      "attunement": "No"
+    },
+    "tags": ["potion", "healing", "consumable"],
+    "source": "SRD 5.1"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "fireball",
+    "name": "Fireball",
+    "summary": "A bright streak flashes to a point and explodes in a 20-foot-radius sphere of flame.",
+    "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.\n\n**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+    "properties": {
+      "level": 3,
+      "school": "Evocation",
+      "casting_time": "1 action",
+      "range": "150 feet",
+      "components": "V, S, M (a tiny ball of bat guano and sulfur)",
+      "duration": "Instantaneous"
+    },
+    "tags": ["evocation", "damage", "fire", "aoe"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "cure-wounds",
+    "name": "Cure Wounds",
+    "summary": "A creature you touch regains hit points equal to 1d8 + your spellcasting ability modifier.",
+    "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\n**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
+    "properties": {
+      "level": 1,
+      "school": "Evocation",
+      "casting_time": "1 action",
+      "range": "Touch",
+      "components": "V, S",
+      "duration": "Instantaneous"
+    },
+    "tags": ["evocation", "healing"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "summary": "An invisible barrier of magical force protects you, granting +5 AC until the start of your next turn.",
+    "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+    "properties": {
+      "level": 1,
+      "school": "Abjuration",
+      "casting_time": "1 reaction",
+      "range": "Self",
+      "components": "V, S",
+      "duration": "1 round"
+    },
+    "tags": ["abjuration", "defense", "reaction"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "detect-magic",
+    "name": "Detect Magic",
+    "summary": "For the duration, you sense the presence of magic within 30 feet of you.",
+    "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+    "properties": {
+      "level": 1,
+      "school": "Divination",
+      "casting_time": "1 action",
+      "range": "Self",
+      "components": "V, S",
+      "duration": "Concentration, up to 10 minutes"
+    },
+    "tags": ["divination", "detection", "ritual", "utility"],
+    "source": "SRD 5.1"
+  }
+]

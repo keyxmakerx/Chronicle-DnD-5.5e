@@ -1,0 +1,188 @@
+{
+  "id": "dnd5e",
+  "name": "D&D 5th Edition (2024)",
+  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition (2024 revision). Content sourced from the SRD 5.1 under the OGL.",
+  "version": "0.1.0",
+  "author": "Chronicle Team",
+  "license": "OGL-1.0a",
+  "icon": "fa-dragon",
+  "api_version": "1",
+  "status": "available",
+  "foundry_system_id": "dnd5e",
+
+  "categories": [
+    {
+      "slug": "spells",
+      "name": "Spells",
+      "icon": "fa-wand-sparkles",
+      "fields": [
+        { "key": "level", "label": "Level", "type": "number" },
+        { "key": "school", "label": "School", "type": "string" },
+        { "key": "casting_time", "label": "Casting Time", "type": "string" },
+        { "key": "range", "label": "Range", "type": "string" },
+        { "key": "components", "label": "Components", "type": "string" },
+        { "key": "duration", "label": "Duration", "type": "string" }
+      ]
+    },
+    {
+      "slug": "monsters",
+      "name": "Monsters",
+      "icon": "fa-skull",
+      "fields": [
+        { "key": "cr", "label": "CR", "type": "string" },
+        { "key": "type", "label": "Type", "type": "string" },
+        { "key": "size", "label": "Size", "type": "string" },
+        { "key": "alignment", "label": "Alignment", "type": "string" },
+        { "key": "hp", "label": "HP", "type": "string" },
+        { "key": "ac", "label": "AC", "type": "string" }
+      ]
+    },
+    {
+      "slug": "items",
+      "name": "Magic Items",
+      "icon": "fa-gem",
+      "fields": [
+        { "key": "rarity", "label": "Rarity", "type": "string" },
+        { "key": "type", "label": "Type", "type": "string" },
+        { "key": "attunement", "label": "Attunement", "type": "string" }
+      ]
+    },
+    {
+      "slug": "classes",
+      "name": "Classes",
+      "icon": "fa-hat-wizard",
+      "fields": [
+        { "key": "hit_die", "label": "Hit Die", "type": "string" },
+        { "key": "primary_ability", "label": "Primary Ability", "type": "string" },
+        { "key": "saving_throws", "label": "Saving Throws", "type": "string" }
+      ]
+    },
+    {
+      "slug": "races",
+      "name": "Races",
+      "icon": "fa-users",
+      "fields": [
+        { "key": "speed", "label": "Speed", "type": "string" },
+        { "key": "size", "label": "Size", "type": "string" },
+        { "key": "ability_bonuses", "label": "Ability Bonuses", "type": "string" }
+      ]
+    },
+    {
+      "slug": "conditions",
+      "name": "Conditions",
+      "icon": "fa-heart-crack",
+      "fields": [
+        { "key": "effect", "label": "Effect", "type": "string" }
+      ]
+    }
+  ],
+
+  "entity_presets": [
+    {
+      "slug": "dnd5e-character",
+      "name": "Character",
+      "name_plural": "Characters",
+      "icon": "fa-user-shield",
+      "color": "#3b82f6",
+      "category": "character",
+      "foundry_actor_type": "character",
+      "fields": [
+        { "key": "race", "label": "Race", "type": "string" },
+        { "key": "class", "label": "Class", "type": "string" },
+        { "key": "level", "label": "Level", "type": "number", "foundry_path": "system.details.level", "foundry_writable": false },
+        { "key": "alignment", "label": "Alignment", "type": "string" },
+        { "key": "str", "label": "Strength", "type": "number", "foundry_path": "system.abilities.str.value" },
+        { "key": "dex", "label": "Dexterity", "type": "number", "foundry_path": "system.abilities.dex.value" },
+        { "key": "con", "label": "Constitution", "type": "number", "foundry_path": "system.abilities.con.value" },
+        { "key": "int", "label": "Intelligence", "type": "number", "foundry_path": "system.abilities.int.value" },
+        { "key": "wis", "label": "Wisdom", "type": "number", "foundry_path": "system.abilities.wis.value" },
+        { "key": "cha", "label": "Charisma", "type": "number", "foundry_path": "system.abilities.cha.value" },
+        { "key": "hp_max", "label": "Max HP", "type": "number", "foundry_path": "system.attributes.hp.max" },
+        { "key": "hp_current", "label": "Current HP", "type": "number", "foundry_path": "system.attributes.hp.value" },
+        { "key": "ac", "label": "Armor Class", "type": "number", "foundry_path": "system.attributes.ac.value", "foundry_writable": false },
+        { "key": "speed", "label": "Speed", "type": "string", "foundry_path": "system.attributes.movement.walk", "foundry_writable": false },
+        { "key": "proficiency_bonus", "label": "Proficiency Bonus", "type": "number", "foundry_path": "system.attributes.prof", "foundry_writable": false },
+        { "key": "background", "label": "Background", "type": "string" },
+        { "key": "player_name", "label": "Player Name", "type": "string" }
+      ]
+    },
+    {
+      "slug": "dnd5e-monster",
+      "name": "Monster",
+      "name_plural": "Monsters",
+      "icon": "fa-skull",
+      "color": "#ef4444",
+      "category": "creature",
+      "fields": [
+        { "key": "size", "label": "Size", "type": "string" },
+        { "key": "type", "label": "Type", "type": "string" },
+        { "key": "alignment", "label": "Alignment", "type": "string" },
+        { "key": "challenge_rating", "label": "Challenge Rating", "type": "string" },
+        { "key": "hit_points", "label": "Hit Points", "type": "string" },
+        { "key": "armor_class", "label": "Armor Class", "type": "string" },
+        { "key": "speed", "label": "Speed", "type": "string" },
+        { "key": "str", "label": "STR", "type": "number" },
+        { "key": "dex", "label": "DEX", "type": "number" },
+        { "key": "con", "label": "CON", "type": "number" },
+        { "key": "int", "label": "INT", "type": "number" },
+        { "key": "wis", "label": "WIS", "type": "number" },
+        { "key": "cha", "label": "CHA", "type": "number" },
+        { "key": "environment", "label": "Environment", "type": "string" },
+        { "key": "source", "label": "Source", "type": "string" }
+      ]
+    },
+    {
+      "slug": "dnd5e-spell",
+      "name": "Spell",
+      "name_plural": "Spells",
+      "icon": "fa-wand-sparkles",
+      "color": "#8b5cf6",
+      "category": "item",
+      "fields": [
+        { "key": "level", "label": "Level", "type": "number" },
+        { "key": "school", "label": "School", "type": "string" },
+        { "key": "casting_time", "label": "Casting Time", "type": "string" },
+        { "key": "range", "label": "Range", "type": "string" },
+        { "key": "components", "label": "Components", "type": "string" },
+        { "key": "duration", "label": "Duration", "type": "string" },
+        { "key": "concentration", "label": "Concentration", "type": "boolean" },
+        { "key": "ritual", "label": "Ritual", "type": "boolean" },
+        { "key": "classes", "label": "Classes", "type": "string" }
+      ]
+    },
+    {
+      "slug": "dnd5e-magic-item",
+      "name": "Magic Item",
+      "name_plural": "Magic Items",
+      "icon": "fa-gem",
+      "color": "#f59e0b",
+      "category": "item",
+      "fields": [
+        { "key": "rarity", "label": "Rarity", "type": "string" },
+        { "key": "type", "label": "Type", "type": "string" },
+        { "key": "attunement", "label": "Requires Attunement", "type": "boolean" },
+        { "key": "attunement_by", "label": "Attunement By", "type": "string" },
+        { "key": "source", "label": "Source", "type": "string" }
+      ]
+    }
+  ],
+
+  "relation_presets": [
+    { "slug": "ally", "name": "Ally", "reverse_name": "Ally" },
+    { "slug": "enemy", "name": "Enemy", "reverse_name": "Enemy" },
+    { "slug": "patron", "name": "Patron", "reverse_name": "Servant" },
+    { "slug": "leader", "name": "Leader", "reverse_name": "Follower" },
+    { "slug": "mentor", "name": "Mentor", "reverse_name": "Student" },
+    { "slug": "worships", "name": "Worships", "reverse_name": "Worshipped By" },
+    { "slug": "created", "name": "Created", "reverse_name": "Created By" },
+    {
+      "slug": "owns",
+      "name": "Owns",
+      "reverse_name": "Owned By",
+      "metadata_schema": {
+        "quantity": { "type": "number", "default": 1 },
+        "equipped": { "type": "boolean", "default": false }
+      }
+    }
+  ]
+}

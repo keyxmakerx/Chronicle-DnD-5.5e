@@ -1,0 +1,46 @@
+[
+  {
+    "id": "blinded",
+    "name": "Blinded",
+    "summary": "A blinded creature can't see and automatically fails any ability check that requires sight.",
+    "description": "A blinded creature can't see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
+    "properties": {
+      "effect": "Can't see; auto-fail sight checks; attacks against have advantage; own attacks have disadvantage"
+    },
+    "tags": ["debuff", "sensory"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "frightened",
+    "name": "Frightened",
+    "summary": "A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.",
+    "description": "A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight. The creature can't willingly move closer to the source of its fear.",
+    "properties": {
+      "effect": "Disadvantage on checks and attacks while source visible; can't willingly approach source"
+    },
+    "tags": ["debuff", "mental"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "poisoned",
+    "name": "Poisoned",
+    "summary": "A poisoned creature has disadvantage on attack rolls and ability checks.",
+    "description": "A poisoned creature has disadvantage on attack rolls and ability checks.",
+    "properties": {
+      "effect": "Disadvantage on attack rolls and ability checks"
+    },
+    "tags": ["debuff", "physical"],
+    "source": "SRD 5.1"
+  },
+  {
+    "id": "stunned",
+    "name": "Stunned",
+    "summary": "A stunned creature is incapacitated, can't move, and can speak only falteringly.",
+    "description": "A stunned creature is incapacitated, can't move, and can speak only falteringly. The creature automatically fails Strength and Dexterity saving throws. Attack rolls against the creature have advantage.",
+    "properties": {
+      "effect": "Incapacitated; can't move; auto-fail STR/DEX saves; attacks against have advantage"
+    },
+    "tags": ["debuff", "incapacitation"],
+    "source": "SRD 5.1"
+  }
+]

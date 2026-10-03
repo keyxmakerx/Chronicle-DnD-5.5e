@@ -173,6 +173,7 @@
       { "label": "Hit Points", "current": "hp_current", "max": "hp_max", "warn_below": 0.5 },
       { "label": "Armor Class", "current": "ac" }
     ],
+    "hero_subtitle": "class",
     "conditions": { "category": "conditions" }
   },
   "relation_presets": [

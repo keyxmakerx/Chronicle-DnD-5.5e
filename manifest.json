@@ -102,6 +102,7 @@
         { "key": "ac", "label": "Armor Class", "type": "number", "foundry_path": "system.attributes.ac.value", "foundry_writable": false },
         { "key": "speed", "label": "Speed", "type": "string", "foundry_path": "system.attributes.movement.walk", "foundry_writable": false },
         { "key": "proficiency_bonus", "label": "Proficiency Bonus", "type": "number", "foundry_path": "system.attributes.prof", "foundry_writable": false },
+        { "key": "gp", "label": "Gold (gp)", "type": "number", "foundry_path": "system.currency.gp" },
         { "key": "background", "label": "Background", "type": "string" },
         { "key": "player_name", "label": "Player Name", "type": "string" }
       ]

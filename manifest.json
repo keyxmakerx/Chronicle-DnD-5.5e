@@ -168,6 +168,13 @@
     }
   ],
 
+  "dm_screen": {
+    "party": [
+      { "label": "Hit Points", "current": "hp_current", "max": "hp_max", "warn_below": 0.5 },
+      { "label": "Armor Class", "current": "ac" }
+    ],
+    "conditions": { "category": "conditions" }
+  },
   "relation_presets": [
     { "slug": "ally", "name": "Ally", "reverse_name": "Ally" },
     { "slug": "enemy", "name": "Enemy", "reverse_name": "Enemy" },

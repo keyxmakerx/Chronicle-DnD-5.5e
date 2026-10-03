@@ -102,7 +102,11 @@
         { "key": "ac", "label": "Armor Class", "type": "number", "foundry_path": "system.attributes.ac.value", "foundry_writable": false },
         { "key": "speed", "label": "Speed", "type": "string", "foundry_path": "system.attributes.movement.walk", "foundry_writable": false },
         { "key": "proficiency_bonus", "label": "Proficiency Bonus", "type": "number", "foundry_path": "system.attributes.prof", "foundry_writable": false },
+        { "key": "cp", "label": "Copper (cp)", "type": "number", "foundry_path": "system.currency.cp" },
+        { "key": "sp", "label": "Silver (sp)", "type": "number", "foundry_path": "system.currency.sp" },
+        { "key": "ep", "label": "Electrum (ep)", "type": "number", "foundry_path": "system.currency.ep" },
         { "key": "gp", "label": "Gold (gp)", "type": "number", "foundry_path": "system.currency.gp" },
+        { "key": "pp", "label": "Platinum (pp)", "type": "number", "foundry_path": "system.currency.pp" },
         { "key": "background", "label": "Background", "type": "string" },
         { "key": "player_name", "label": "Player Name", "type": "string" }
       ]

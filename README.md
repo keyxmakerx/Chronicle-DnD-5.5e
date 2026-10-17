@@ -8,7 +8,7 @@ Game system content pack for Chronicle providing D&D 5th Edition (2024 revision)
 - **Entity Presets**: Character (with full Foundry VTT sync), monster, spell, and magic item templates. The character sheet carries all five coins (cp, sp, ep, gp, pp), synced with Foundry's currency
 - **DM Screen**: the manifest's `dm_screen` block gives Chronicle's DM Screen each hero's Hit Points (current and max, flagged below half) and Armor Class, the class under the hero's name, and the conditions from the Conditions reference for rules lookup
 - **Relation Types**: Ally, enemy, patron, leader, mentor, worships, created, owns (with quantity/equipped metadata)
-- **Foundry VTT Integration**: foundry_path annotations on character fields for automatic bidirectional sync via the generic adapter
+- **Foundry VTT Integration**: foundry_path annotations on the character fields Foundry stores (all but race, class, alignment, background and player name) for automatic bidirectional sync via the generic adapter
 
 ## Installation
 

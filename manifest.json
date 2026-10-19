@@ -9,6 +9,9 @@
   "api_version": "1",
   "status": "available",
   "foundry_system_id": "dnd5e",
+  "terms": {
+    "gm": "DM"
+  },
 
   "categories": [
     {

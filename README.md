@@ -9,7 +9,7 @@
 
 - **Page types**: Character, monster, spell and magic item. The character sheet carries all five coins (cp, sp, ep, gp, pp), kept in step with Foundry's currency.
 - **DM Screen**: each hero's Hit Points (current and max, flagged below half) and Armor Class, the class under the hero's name, and the conditions from the Conditions reference for rules lookup.
-- **Foundry VTT sync**: character fields carry `foundry_path` annotations, so the [Chronicle Sync module](https://github.com/keyxmakerx/Chronicle-Foundry-Module) syncs them both ways with no extra setup.
+- **Foundry VTT sync**: the character fields Foundry stores (all but race, class, alignment, background and player name) carry `foundry_path` annotations, so the [Chronicle Sync module](https://github.com/keyxmakerx/Chronicle-Foundry-Module) syncs them both ways with no extra setup.
 - **Relation types**: ally, enemy, patron, leader, mentor, worships, created and owns (with quantity and equipped details).
 - **Reference data**: a starter sample from the SRD 5.1. It has three or four each of spells, monsters, magic items, classes, races and conditions, enough to show the format but not a full rules reference.
 
@@ -19,9 +19,7 @@
 2. Install the latest version.
 3. In your campaign, open **Manage > Game & features** and pick **D&D 5th Edition** in the **Game system** card.
 
-> **Known problem:** Chronicle currently reads this repository's name as `Chronicle-DnD-5`, because of the dot in `5.5e`, so installing it from Admin > Packages fails ([Chronicle#1215](https://github.com/keyxmakerx/Chronicle/issues/1215)). Until that is fixed, try the manual upload below.
-
-Without the package manager, download the latest release ZIP and upload it from **Campaign Settings > Content Packs > Upload System**, then check the validation report.
+To install without the package manager, download the latest release ZIP and upload it from **Campaign Settings > Content Packs > Upload System**, then check the validation report.
 
 To update, install the newer version from **Admin > Packages**. Chronicle adds any new sheet fields (for example cp, sp, ep and pp) to the Character type of campaigns already using this system. It never brings back a field a GM deleted, and it does not create page types or change existing fields.
 

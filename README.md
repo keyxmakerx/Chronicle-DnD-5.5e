@@ -11,7 +11,7 @@
 - **DM Screen**: each hero's Hit Points (current and max, flagged below half) and Armor Class, the class under the hero's name, and the conditions from the Conditions reference for rules lookup.
 - **Foundry VTT sync**: the character fields Foundry stores (all but race, class, alignment, background and player name) carry `foundry_path` annotations, so the [Chronicle Sync module](https://github.com/keyxmakerx/Chronicle-Foundry-Module) syncs them both ways with no extra setup.
 - **Relation types**: ally, enemy, patron, leader, mentor, worships, created and owns (with quantity and equipped details).
-- **Reference data**: a starter sample from the SRD 5.1. It has three or four each of spells, monsters, magic items, classes, races and conditions, enough to show the format but not a full rules reference.
+- **Reference data**: a starter sample from the SRD 5.1. It has three or four each of spells, monsters, magic items, classes and races, enough to show the format but not a full rules reference, and all fifteen conditions, so the DM Screen can look up any of them.
 
 ## Install
 

@@ -183,6 +183,17 @@
     "hero_subtitle": "class",
     "conditions": { "category": "conditions" }
   },
+  "widgets": [
+    {
+      "slug": "encounter-totals",
+      "name": "Encounter Totals",
+      "description": "The fight's totals in the encounter builder: heroes and levels, creatures and XP, and a bar against the XP the DM says the party handles. Chronicle loads it itself; there is nothing to place.",
+      "icon": "fa-scale-balanced",
+      "script_file": "widgets/encounter-totals.js",
+      "host_mounted": true,
+      "config": []
+    }
+  ],
   "relation_presets": [
     { "slug": "ally", "name": "Ally", "reverse_name": "Ally" },
     { "slug": "enemy", "name": "Enemy", "reverse_name": "Enemy" },

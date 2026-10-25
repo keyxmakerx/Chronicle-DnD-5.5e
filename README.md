@@ -9,6 +9,7 @@
 
 - **Page types**: Character, monster, spell and magic item. The character sheet carries all five coins (cp, sp, ep, gp, pp), kept in step with Foundry's currency.
 - **DM Screen**: each hero's Hit Points (current and max, flagged below half) and Armor Class, the class under the hero's name, and the conditions from the Conditions reference for rules lookup.
+- **Encounter totals**: in an Adventures page's encounter builder, a panel under "Who's fighting" sums the fight: the heroes and their levels, the creatures and their XP (from each monster page's challenge rating, using the SRD 5.1 table). Type the XP your party takes on comfortably once, for the whole campaign, and every encounter's bar fills against it. The panel never labels a fight easy or deadly; a figure a page doesn't give is listed as not counted.
 - **Foundry VTT sync**: the character fields Foundry stores (all but race, class, alignment, background and player name) carry `foundry_path` annotations, so the [Chronicle Sync module](https://github.com/keyxmakerx/Chronicle-Foundry-Module) syncs them both ways with no extra setup.
 - **Relation types**: ally, enemy, patron, leader, mentor, worships, created and owns (with quantity and equipped details).
 - **Reference data**: a starter sample from the SRD 5.1. It has three or four each of spells, monsters, magic items, classes and races, enough to show the format but not a full rules reference, and all fifteen conditions, so the DM Screen can look up any of them.
@@ -31,6 +32,8 @@ To add more SRD content:
 2. Follow the existing entry format: `id`, `name`, `summary`, `description`, `properties`, `tags`, `source`.
 3. Use only content from the SRD 5.1 or other OGL-licensed sources.
 4. Put `"source": "SRD 5.1"` on every entry.
+
+Widget tests run with Node: `node --test tools/*.mjs`.
 
 ## License
 

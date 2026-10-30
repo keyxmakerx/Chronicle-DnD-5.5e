@@ -1,8 +1,8 @@
-<h1 align="center">D&amp;D 5th Edition (2024) for Chronicle</h1>
+<h1 align="center">D&amp;D 5th Edition (SRD 5.1) for Chronicle</h1>
 
 <p align="center">
-  <b>D&amp;D 5e (2024) page types, a DM Screen layout and Foundry VTT sync for <a href="https://github.com/keyxmakerx/Chronicle">Chronicle</a>.</b><br>
-  Reference content from the SRD 5.1, under the Open Game License.
+  <b>D&amp;D 5e page types, a DM Screen layout and Foundry VTT sync for <a href="https://github.com/keyxmakerx/Chronicle">Chronicle</a>.</b><br>
+  Built on the 2014 rules: reference content from the SRD 5.1, under CC-BY-4.0.
 </p>
 
 ## What it adds
@@ -30,11 +30,16 @@ To add more SRD content:
 
 1. Add entries to the matching `data/*.json` file.
 2. Follow the existing entry format: `id`, `name`, `summary`, `description`, `properties`, `tags`, `source`.
-3. Use only content from the SRD 5.1 or other OGL-licensed sources.
+3. Use only content from the SRD 5.1, so the pack stays on one ruleset and under one licence.
 4. Put `"source": "SRD 5.1"` on every entry.
 
 Widget tests run with Node: `node --test tools/*.mjs`.
 
 ## License
 
-Reference content is sourced from the Systems Reference Document 5.1 and is used under the Open Game License v1.0a. [LICENSE](LICENSE) carries the attribution and a link to the OGL text.
+Two parts, with different sources:
+
+- **Reference content in `data/`** comes from the System Reference Document 5.1 by Wizards of the Coast LLC, used under CC-BY-4.0.
+- **This package's own work** (`widgets/`, `tools/`, `manifest.json`, this README) is CC-BY-4.0.
+
+[LICENSE](LICENSE) carries the required attribution.

@@ -1,1 +1,4 @@
+# Chronicle installs a release from GitHub's source zip, which honours
+# export-ignore. Dev-only folders stay out of it.
 tools/ export-ignore
+.github/ export-ignore

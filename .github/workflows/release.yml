@@ -1,0 +1,42 @@
+name: Release
+
+# Chronicle installs this package by tag: its package manager reads GitHub
+# Releases and pulls the source zipball of the newest non-prerelease tag, so
+# the tag is the version and manifest.json carries none. This workflow only
+# creates the tag and the Release from main.
+#
+# Usage: Actions tab -> "Release" -> "Run workflow" -> enter the version
+# (e.g. 1.0.0, no leading "v").
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version, no leading "v" (e.g. 1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # Read from an env var, not interpolated into the script, so the input
+      # can't inject shell.
+      - name: Validate version (X.Y.Z, no leading v)
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          echo "$VERSION" | grep -qE '^[0-9]+\.[0-9]+\.[0-9]+$' \
+            || { echo "::error::version must be X.Y.Z with no leading 'v' (got '$VERSION')"; exit 1; }
+
+      - name: Create tag and GitHub release from main
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ inputs.version }}
+          name: ${{ inputs.version }}
+          target_commitish: main
+          generate_release_notes: true
+          make_latest: 'true'

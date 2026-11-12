@@ -211,5 +211,20 @@
         "equipped": { "type": "boolean", "default": false }
       }
     }
-  ]
+  ],
+  "shop_tests": {
+    "dice": "1d20",
+    "style": "dc",
+    "stats": [
+      { "key": "str", "label": "Strength", "score": true },
+      { "key": "dex", "label": "Dexterity", "score": true },
+      { "key": "con", "label": "Constitution", "score": true },
+      { "key": "int", "label": "Intelligence", "score": true },
+      { "key": "wis", "label": "Wisdom", "score": true },
+      { "key": "cha", "label": "Charisma", "score": true }
+    ],
+    "haggle": "cha",
+    "look": "wis",
+    "dc": { "easy": 10, "usual": 15, "hard": 20 }
+  }
 }

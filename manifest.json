@@ -1,10 +1,9 @@
 {
   "id": "dnd5e",
-  "name": "D&D 5th Edition (2024)",
-  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition (2024 revision). Content sourced from the SRD 5.1 under the OGL.",
-  "version": "0.1.0",
+  "name": "D&D 5th Edition (SRD 5.1)",
+  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition (the 2014 rules). Content from the SRD 5.1, under CC-BY-4.0.",
   "author": "Chronicle Team",
-  "license": "OGL-1.0a",
+  "license": "CC-BY-4.0",
   "icon": "fa-dragon",
   "api_version": "1",
   "status": "available",
@@ -211,5 +210,20 @@
         "equipped": { "type": "boolean", "default": false }
       }
     }
-  ]
+  ],
+  "shop_tests": {
+    "dice": "1d20",
+    "style": "dc",
+    "stats": [
+      { "key": "str", "label": "Strength", "score": true },
+      { "key": "dex", "label": "Dexterity", "score": true },
+      { "key": "con", "label": "Constitution", "score": true },
+      { "key": "int", "label": "Intelligence", "score": true },
+      { "key": "wis", "label": "Wisdom", "score": true },
+      { "key": "cha", "label": "Charisma", "score": true }
+    ],
+    "haggle": "cha",
+    "look": "wis",
+    "dc": { "easy": 10, "usual": 15, "hard": 20 }
+  }
 }

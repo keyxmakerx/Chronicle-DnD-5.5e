@@ -1,0 +1,70 @@
+[
+  {
+    "id": "acolyte",
+    "name": "Acolyte",
+    "summary": "You devoted yourself to service in a temple.",
+    "description": "You spent your early years in service to a temple, learning its rites and its lore.",
+    "properties": {
+      "ability_scores": "Intelligence, Wisdom, Charisma",
+      "feat": "Magic Initiate (Cleric)",
+      "skill_proficiencies": "Insight, Religion",
+      "tool_proficiency": "Calligrapher's Supplies",
+      "equipment": "Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP"
+    },
+    "tags": [
+      "religious"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "criminal",
+    "name": "Criminal",
+    "summary": "You made your living outside the law.",
+    "description": "You earned your living through crime, and learned to move unseen and to size up a mark.",
+    "properties": {
+      "ability_scores": "Dexterity, Constitution, Intelligence",
+      "feat": "Alert",
+      "skill_proficiencies": "Sleight of Hand, Stealth",
+      "tool_proficiency": "Thieves' Tools",
+      "equipment": "2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP"
+    },
+    "tags": [
+      "underworld"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "summary": "You spent years learning the lore of the multiverse.",
+    "description": "You studied under scholars and in libraries, collecting knowledge on a range of subjects.",
+    "properties": {
+      "ability_scores": "Constitution, Intelligence, Wisdom",
+      "feat": "Magic Initiate (Wizard)",
+      "skill_proficiencies": "Arcana, History",
+      "tool_proficiency": "Calligrapher's Supplies",
+      "equipment": "Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP"
+    },
+    "tags": [
+      "scholar"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "soldier",
+    "name": "Soldier",
+    "summary": "You trained and served as a fighter in an army or militia.",
+    "description": "You began training for war young and know the discipline and dangers of the battlefield.",
+    "properties": {
+      "ability_scores": "Strength, Dexterity, Constitution",
+      "feat": "Savage Attacker",
+      "skill_proficiencies": "Athletics, Intimidation",
+      "tool_proficiency": "One kind of Gaming Set",
+      "equipment": "Spear, Shortbow, 20 Arrows, Gaming Set, Healer's Kit, Quiver, Traveler's Clothes, 14 GP"
+    },
+    "tags": [
+      "martial"
+    ],
+    "source": "SRD 5.2"
+  }
+]

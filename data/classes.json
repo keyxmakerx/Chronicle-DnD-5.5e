@@ -1,41 +1,212 @@
 [
   {
-    "id": "fighter",
-    "name": "Fighter",
-    "summary": "A master of martial combat, skilled with a variety of weapons and armor.",
-    "description": "Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor.",
+    "id": "barbarian",
+    "name": "Barbarian",
+    "summary": "A fierce warrior who fights in a primal rage.",
+    "description": "Barbarians channel a primal rage that makes them hard to kill and devastating in melee.",
     "properties": {
-      "hit_die": "d10",
-      "primary_ability": "Strength or Dexterity",
-      "saving_throws": "Strength, Constitution"
+      "hit_die": "d12",
+      "primary_ability": "Strength",
+      "saving_throws": "Strength, Constitution",
+      "armor_training": "Light armor, Medium armor, Shields"
     },
-    "tags": ["martial", "versatile"],
-    "source": "SRD 5.1"
+    "tags": [
+      "martial",
+      "rage"
+    ],
+    "source": "SRD 5.2"
   },
   {
-    "id": "wizard",
-    "name": "Wizard",
-    "summary": "A scholarly magic-user capable of manipulating the structures of reality.",
-    "description": "Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control.",
+    "id": "bard",
+    "name": "Bard",
+    "summary": "An inspiring performer whose magic is woven from words and music.",
+    "description": "Bards use music, story, and magic to inspire allies, undermine foes, and cast spells.",
     "properties": {
-      "hit_die": "d6",
-      "primary_ability": "Intelligence",
-      "saving_throws": "Intelligence, Wisdom"
+      "hit_die": "d8",
+      "primary_ability": "Charisma",
+      "saving_throws": "Dexterity, Charisma",
+      "armor_training": "Light armor"
     },
-    "tags": ["arcane", "spellcaster"],
-    "source": "SRD 5.1"
+    "tags": [
+      "arcane",
+      "spellcaster",
+      "support"
+    ],
+    "source": "SRD 5.2"
   },
   {
     "id": "cleric",
     "name": "Cleric",
     "summary": "A priestly champion who wields divine magic in service of a higher power.",
-    "description": "Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. A cleric is imbued with divine magic.",
+    "description": "Clerics are intermediaries between the mortal world and the distant planes of the gods, and draw on divine magic to heal and to smite.",
     "properties": {
       "hit_die": "d8",
       "primary_ability": "Wisdom",
-      "saving_throws": "Wisdom, Charisma"
+      "saving_throws": "Wisdom, Charisma",
+      "armor_training": "Light armor, Medium armor, Shields"
     },
-    "tags": ["divine", "spellcaster", "healer"],
-    "source": "SRD 5.1"
+    "tags": [
+      "divine",
+      "spellcaster",
+      "healer"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "druid",
+    "name": "Druid",
+    "summary": "A wielder of nature's magic who can shift into animal forms.",
+    "description": "Druids draw on the power of nature to cast spells and to take the shape of beasts.",
+    "properties": {
+      "hit_die": "d8",
+      "primary_ability": "Wisdom",
+      "saving_throws": "Intelligence, Wisdom",
+      "armor_training": "Light armor, Shields"
+    },
+    "tags": [
+      "primal",
+      "spellcaster",
+      "shapeshifter"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "fighter",
+    "name": "Fighter",
+    "summary": "A master of martial combat, skilled with a variety of weapons and armor.",
+    "description": "Fighters are skilled with every weapon and every form of armor, and have the broadest training in combat.",
+    "properties": {
+      "hit_die": "d10",
+      "primary_ability": "Strength or Dexterity",
+      "saving_throws": "Strength, Constitution",
+      "armor_training": "Light armor, Medium armor, Heavy armor, Shields"
+    },
+    "tags": [
+      "martial",
+      "versatile"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "monk",
+    "name": "Monk",
+    "summary": "A martial artist who channels ki into swift unarmed strikes.",
+    "description": "Monks fight with unarmed strikes and a pool of ki, moving with speed and precision rather than armor.",
+    "properties": {
+      "hit_die": "d8",
+      "primary_ability": "Dexterity and Wisdom",
+      "saving_throws": "Strength, Dexterity",
+      "armor_training": "None"
+    },
+    "tags": [
+      "martial",
+      "ki"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "paladin",
+    "name": "Paladin",
+    "summary": "A holy warrior bound by a sacred oath.",
+    "description": "Paladins combine martial skill with divine magic, empowered by an oath they have sworn.",
+    "properties": {
+      "hit_die": "d10",
+      "primary_ability": "Strength and Charisma",
+      "saving_throws": "Wisdom, Charisma",
+      "armor_training": "Light armor, Medium armor, Heavy armor, Shields"
+    },
+    "tags": [
+      "martial",
+      "divine",
+      "spellcaster"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "summary": "A hunter and scout who uses martial skill and nature magic.",
+    "description": "Rangers track, hunt, and survive in the wild, supported by primal magic.",
+    "properties": {
+      "hit_die": "d10",
+      "primary_ability": "Dexterity and Wisdom",
+      "saving_throws": "Strength, Dexterity",
+      "armor_training": "Light armor, Medium armor, Shields"
+    },
+    "tags": [
+      "martial",
+      "primal",
+      "spellcaster"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "summary": "A stealthy expert who strikes where the enemy is weak.",
+    "description": "Rogues rely on skill, stealth, and precise strikes, and are masters of finding and exploiting weakness.",
+    "properties": {
+      "hit_die": "d8",
+      "primary_ability": "Dexterity",
+      "saving_throws": "Dexterity, Intelligence",
+      "armor_training": "Light armor"
+    },
+    "tags": [
+      "martial",
+      "skills"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "sorcerer",
+    "name": "Sorcerer",
+    "summary": "A spellcaster whose magic is innate, born of bloodline or fate.",
+    "description": "Sorcerers hold magic in their blood and can bend their spells with sorcery points.",
+    "properties": {
+      "hit_die": "d6",
+      "primary_ability": "Charisma",
+      "saving_throws": "Constitution, Charisma",
+      "armor_training": "None"
+    },
+    "tags": [
+      "arcane",
+      "spellcaster"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "summary": "A seeker of power who bargains with an otherworldly patron.",
+    "description": "Warlocks gain magic from a pact with a powerful being, casting a few potent spells that recover on a short rest.",
+    "properties": {
+      "hit_die": "d8",
+      "primary_ability": "Charisma",
+      "saving_throws": "Wisdom, Charisma",
+      "armor_training": "Light armor"
+    },
+    "tags": [
+      "arcane",
+      "spellcaster",
+      "pact"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "wizard",
+    "name": "Wizard",
+    "summary": "A scholarly magic-user capable of manipulating the structures of reality.",
+    "description": "Wizards are supreme magic-users, defined as a class by the spells they cast, which they study and record in a spellbook.",
+    "properties": {
+      "hit_die": "d6",
+      "primary_ability": "Intelligence",
+      "saving_throws": "Intelligence, Wisdom",
+      "armor_training": "None"
+    },
+    "tags": [
+      "arcane",
+      "spellcaster"
+    ],
+    "source": "SRD 5.2"
   }
 ]

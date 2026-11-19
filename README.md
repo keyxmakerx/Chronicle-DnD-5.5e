@@ -1,8 +1,8 @@
-<h1 align="center">D&amp;D 5th Edition (SRD 5.1) for Chronicle</h1>
+<h1 align="center">D&amp;D 5th Edition (SRD 5.2 / 5.1) for Chronicle</h1>
 
 <p align="center">
   <b>D&amp;D 5e page types, a DM Screen layout and Foundry VTT sync for <a href="https://github.com/keyxmakerx/Chronicle">Chronicle</a>.</b><br>
-  Built on the 2014 rules: reference content from the SRD 5.1, under CC-BY-4.0.
+  Character options (species, classes, backgrounds) from the SRD 5.2, the 2024 rules; spells, monsters, magic items and conditions from the SRD 5.1, the 2014 rules. Both under CC-BY-4.0.
 </p>
 
 ## What it adds
@@ -10,9 +10,9 @@
 - **Page types**: Character, monster, spell and magic item. The character sheet carries all five coins (cp, sp, ep, gp, pp), kept in step with Foundry's currency.
 - **DM Screen**: each hero's Hit Points (current and max, flagged below half) and Armor Class, the class under the hero's name, and the conditions from the Conditions reference for rules lookup.
 - **Encounter totals**: in an Adventures page's encounter builder, a panel under "Who's fighting" sums the fight: the heroes and their levels, the creatures and their XP (from each monster page's challenge rating, using the SRD 5.1 table). Type the XP your party takes on comfortably once, for the whole campaign, and every encounter's bar fills against it. The panel never labels a fight easy or deadly; a figure a page doesn't give is listed as not counted.
-- **Foundry VTT sync**: the character fields Foundry stores (all but race, class, alignment, background and player name) carry `foundry_path` annotations, so the [Chronicle Sync module](https://github.com/keyxmakerx/Chronicle-Foundry-Module) syncs them both ways with no extra setup.
+- **Foundry VTT sync**: the character fields Foundry stores (all but species, class, alignment, background and player name) carry `foundry_path` annotations, so the [Chronicle Sync module](https://github.com/keyxmakerx/Chronicle-Foundry-Module) syncs them both ways with no extra setup.
 - **Relation types**: ally, enemy, patron, leader, mentor, worships, created and owns (with quantity and equipped details).
-- **Reference data**: a starter sample from the SRD 5.1. It has three or four each of spells, monsters, magic items, classes and races, enough to show the format but not a full rules reference, and all fifteen conditions, so the DM Screen can look up any of them.
+- **Reference data**: all nine species, all twelve classes and the four backgrounds of the SRD 5.2, so the hero builder offers a species, class and background step (the character field keyed `race` is labelled Species). Spells, monsters and magic items are a starter sample from the SRD 5.1, enough to show the format but not a full rules reference, plus all fifteen conditions so the DM Screen can look up any of them.
 
 ## Install
 
@@ -30,8 +30,9 @@ To add more SRD content:
 
 1. Add entries to the matching `data/*.json` file.
 2. Follow the existing entry format: `id`, `name`, `summary`, `description`, `properties`, `tags`, `source`.
-3. Use only content from the SRD 5.1, so the pack stays on one ruleset and under one licence.
-4. Put `"source": "SRD 5.1"` on every entry.
+3. Use only SRD content: the SRD 5.2 for `races.json`, `classes.json` and `backgrounds.json`, the SRD 5.1 for the other files, so each file stays on one ruleset and under one licence.
+4. Put `"source": "SRD 5.2"` or `"SRD 5.1"` on every entry to match its file.
+5. Keep every property a string or number; the builder panel cannot show nested values.
 
 Widget tests run with Node: `node --test tools/*.mjs`.
 
@@ -39,7 +40,7 @@ Widget tests run with Node: `node --test tools/*.mjs`.
 
 Two parts, with different sources:
 
-- **Reference content in `data/`** comes from the System Reference Document 5.1 by Wizards of the Coast LLC, used under CC-BY-4.0.
+- **Reference content in `data/`**: species, classes and backgrounds come from the System Reference Document 5.2, the rest from the System Reference Document 5.1, both by Wizards of the Coast LLC and used under CC-BY-4.0.
 - **This package's own work** (`widgets/`, `tools/`, `manifest.json`, this README) is CC-BY-4.0.
 
 [LICENSE](LICENSE) carries the required attribution.

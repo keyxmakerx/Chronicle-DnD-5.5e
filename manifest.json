@@ -89,7 +89,7 @@
       "category": "character",
       "foundry_actor_type": "character",
       "fields": [
-        { "key": "race", "label": "Race", "type": "string" },
+        { "key": "race", "label": "Race", "type": "string", "foundry_collection": "items", "foundry_item_type": ["race"], "foundry_item_single": true },
         { "key": "class", "label": "Class", "type": "string" },
         { "key": "level", "label": "Level", "type": "number", "foundry_path": "system.details.level", "foundry_writable": false },
         { "key": "alignment", "label": "Alignment", "type": "string" },
@@ -109,7 +109,7 @@
         { "key": "ep", "label": "Electrum (ep)", "type": "number", "foundry_path": "system.currency.ep" },
         { "key": "gp", "label": "Gold (gp)", "type": "number", "foundry_path": "system.currency.gp" },
         { "key": "pp", "label": "Platinum (pp)", "type": "number", "foundry_path": "system.currency.pp" },
-        { "key": "background", "label": "Background", "type": "string" },
+        { "key": "background", "label": "Background", "type": "string", "foundry_collection": "items", "foundry_item_type": ["background"], "foundry_item_single": true },
         { "key": "player_name", "label": "Player Name", "type": "string" }
       ]
     },

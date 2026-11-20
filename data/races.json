@@ -1,41 +1,163 @@
 [
   {
-    "id": "human",
-    "name": "Human",
-    "summary": "The most adaptable and ambitious people among the common races.",
-    "description": "Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+    "id": "dragonborn",
+    "name": "Dragonborn",
+    "summary": "Draconic folk with a breath weapon and the resistance of their ancestry.",
+    "description": "Dragonborn carry the ancestry of dragons. They choose a draconic ancestry that sets the damage type of their breath weapon and their resistance.",
     "properties": {
-      "speed": "30 ft.",
       "size": "Medium",
-      "ability_bonuses": "+1 to all ability scores"
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Draconic Ancestry, Breath Weapon, Damage Resistance, Darkvision, Draconic Flight"
     },
-    "tags": ["humanoid", "versatile"],
-    "source": "SRD 5.1"
+    "tags": [
+      "humanoid",
+      "draconic",
+      "darkvision"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "dwarf",
+    "name": "Dwarf",
+    "summary": "Bold and hardy, dwarves are skilled warriors, miners, and workers of stone.",
+    "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. They are tough, see well in the dark, and have a knack for stonework.",
+    "properties": {
+      "size": "Medium",
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Darkvision (120 ft.), Dwarven Resilience, Dwarven Toughness, Stonecunning"
+    },
+    "tags": [
+      "humanoid",
+      "darkvision",
+      "resilience"
+    ],
+    "source": "SRD 5.2"
   },
   {
     "id": "elf",
     "name": "Elf",
     "summary": "A slender, graceful people with a deep connection to magic and nature.",
-    "description": "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light.",
+    "description": "Elves are a magical people of otherworldly grace. Each belongs to a lineage that grants a particular magical gift, and all share keen senses and a trance in place of sleep.",
     "properties": {
-      "speed": "30 ft.",
       "size": "Medium",
-      "ability_bonuses": "+2 Dexterity"
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Darkvision, Elven Lineage, Fey Ancestry, Keen Senses, Trance"
     },
-    "tags": ["humanoid", "fey-ancestry", "darkvision"],
-    "source": "SRD 5.1"
+    "tags": [
+      "humanoid",
+      "fey-ancestry",
+      "darkvision"
+    ],
+    "source": "SRD 5.2"
   },
   {
-    "id": "dwarf",
-    "name": "Dwarf",
-    "summary": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone.",
-    "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller.",
+    "id": "gnome",
+    "name": "Gnome",
+    "summary": "Small, curious folk whose lineage grants either forest or tinkering magic.",
+    "description": "Gnomes are small, inquisitive people. Their lineage gives them a magical gift suited to the forest or to clever tinkering, and a natural wariness of magic used against them.",
     "properties": {
-      "speed": "25 ft.",
-      "size": "Medium",
-      "ability_bonuses": "+2 Constitution"
+      "size": "Small",
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Darkvision, Gnomish Cunning, Gnomish Lineage"
     },
-    "tags": ["humanoid", "darkvision", "resilience"],
-    "source": "SRD 5.1"
+    "tags": [
+      "humanoid",
+      "darkvision",
+      "small"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "goliath",
+    "name": "Goliath",
+    "summary": "Towering folk descended from giants, strong and hardy in mountain country.",
+    "description": "Goliaths are tall and powerfully built. Each carries a boon from a type of giant in their ancestry and can briefly grow larger.",
+    "properties": {
+      "size": "Medium",
+      "speed": "35 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Giant Ancestry, Large Form, Powerful Build"
+    },
+    "tags": [
+      "humanoid",
+      "giant-ancestry",
+      "strong"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "halfling",
+    "name": "Halfling",
+    "summary": "Small, brave, and lucky wanderers who slip easily out of danger.",
+    "description": "Halflings are small folk known for courage, nimble movement, and good fortune. They can slip past larger creatures and shrug off fear.",
+    "properties": {
+      "size": "Small",
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Brave, Halfling Nimbleness, Luck, Naturally Stealthy"
+    },
+    "tags": [
+      "humanoid",
+      "lucky",
+      "small"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "human",
+    "name": "Human",
+    "summary": "The most adaptable and ambitious people among the common species.",
+    "description": "Humans are the most adaptable and ambitious people among the common species. They are resourceful, skilled, and versatile, and they take an extra feat of their choice.",
+    "properties": {
+      "size": "Medium or Small",
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Resourceful, Skillful, Versatile"
+    },
+    "tags": [
+      "humanoid",
+      "versatile"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "summary": "Tireless, powerful folk who surge with energy in a fight.",
+    "description": "Orcs are powerful and enduring. They see well in the dark, can dash forward with a burst of adrenaline, and refuse to fall at the edge of death.",
+    "properties": {
+      "size": "Medium",
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Adrenaline Rush, Darkvision (120 ft.), Relentless Endurance"
+    },
+    "tags": [
+      "humanoid",
+      "darkvision",
+      "endurance"
+    ],
+    "source": "SRD 5.2"
+  },
+  {
+    "id": "tiefling",
+    "name": "Tiefling",
+    "summary": "Heirs of the Lower Planes, marked by fiendish magic.",
+    "description": "Tieflings carry a fiendish legacy that grants resistance and innate spells according to their ancestry, and an unsettling presence.",
+    "properties": {
+      "size": "Small or Medium",
+      "speed": "30 ft.",
+      "creature_type": "Humanoid",
+      "traits": "Darkvision, Fiendish Legacy, Otherworldly Presence"
+    },
+    "tags": [
+      "humanoid",
+      "fiendish",
+      "darkvision"
+    ],
+    "source": "SRD 5.2"
   }
 ]

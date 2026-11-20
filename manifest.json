@@ -1,7 +1,7 @@
 {
   "id": "dnd5e",
-  "name": "D&D 5th Edition (SRD 5.1)",
-  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition (the 2014 rules). Content from the SRD 5.1, under CC-BY-4.0.",
+  "name": "D&D 5th Edition (SRD 5.2 characters, SRD 5.1 monsters and spells)",
+  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition. Species, classes and backgrounds (data/races.json, classes.json, backgrounds.json) come from the SRD 5.2, the 2024 rules; spells, monsters, magic items and conditions come from the SRD 5.1, the 2014 rules. Both under CC-BY-4.0.",
   "author": "Chronicle Team",
   "license": "CC-BY-4.0",
   "icon": "fa-dragon",
@@ -56,17 +56,31 @@
       "fields": [
         { "key": "hit_die", "label": "Hit Die", "type": "string" },
         { "key": "primary_ability", "label": "Primary Ability", "type": "string" },
-        { "key": "saving_throws", "label": "Saving Throws", "type": "string" }
+        { "key": "saving_throws", "label": "Saving Throws", "type": "string" },
+        { "key": "armor_training", "label": "Armor Training", "type": "string" }
       ]
     },
     {
       "slug": "races",
-      "name": "Races",
+      "name": "Species",
       "icon": "fa-users",
       "fields": [
-        { "key": "speed", "label": "Speed", "type": "string" },
         { "key": "size", "label": "Size", "type": "string" },
-        { "key": "ability_bonuses", "label": "Ability Bonuses", "type": "string" }
+        { "key": "speed", "label": "Speed", "type": "string" },
+        { "key": "creature_type", "label": "Creature Type", "type": "string" },
+        { "key": "traits", "label": "Traits", "type": "string" }
+      ]
+    },
+    {
+      "slug": "backgrounds",
+      "name": "Backgrounds",
+      "icon": "fa-scroll",
+      "fields": [
+        { "key": "ability_scores", "label": "Ability Scores", "type": "string" },
+        { "key": "feat", "label": "Feat", "type": "string" },
+        { "key": "skill_proficiencies", "label": "Skill Proficiencies", "type": "string" },
+        { "key": "tool_proficiency", "label": "Tool Proficiency", "type": "string" },
+        { "key": "equipment", "label": "Equipment", "type": "string" }
       ]
     },
     {
@@ -89,7 +103,7 @@
       "category": "character",
       "foundry_actor_type": "character",
       "fields": [
-        { "key": "race", "label": "Race", "type": "string", "foundry_collection": "items", "foundry_item_type": ["race"], "foundry_item_single": true },
+        { "key": "race", "label": "Species", "type": "string", "foundry_collection": "items", "foundry_item_type": ["race"], "foundry_item_single": true },
         { "key": "class", "label": "Class", "type": "string" },
         { "key": "level", "label": "Level", "type": "number", "foundry_path": "system.details.level", "foundry_writable": false },
         { "key": "alignment", "label": "Alignment", "type": "string" },

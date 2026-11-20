@@ -8,6 +8,14 @@ https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is
 licensed under the Creative Commons Attribution 4.0 International License
 available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
+This work includes material from the System Reference Document 5.2 ("SRD 5.2")
+by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The
+SRD 5.2 is licensed under the Creative Commons Attribution 4.0 International
+License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+data/races.json, data/classes.json and data/backgrounds.json come from the
+SRD 5.2; the other files in data/ come from the SRD 5.1.
+
 2. This package's own work (widgets/, tools/, manifest.json, README.md)
 
 Copyright (c) Chronicle Team. Licensed under the Creative Commons Attribution

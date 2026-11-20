@@ -1,7 +1,7 @@
 {
   "id": "dnd5e",
-  "name": "D&D 5th Edition (SRD 5.1)",
-  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition (the 2014 rules). Content from the SRD 5.1, under CC-BY-4.0.",
+  "name": "D&D 5th Edition (SRD 5.2 characters, SRD 5.1 monsters and spells)",
+  "description": "Reference data, entity presets, and Foundry VTT integration for Dungeons & Dragons 5th Edition. Species, classes and backgrounds (data/races.json, classes.json, backgrounds.json) come from the SRD 5.2, the 2024 rules; spells, monsters, magic items and conditions come from the SRD 5.1, the 2014 rules. Both under CC-BY-4.0.",
   "author": "Chronicle Team",
   "license": "CC-BY-4.0",
   "icon": "fa-dragon",
@@ -56,17 +56,31 @@
       "fields": [
         { "key": "hit_die", "label": "Hit Die", "type": "string" },
         { "key": "primary_ability", "label": "Primary Ability", "type": "string" },
-        { "key": "saving_throws", "label": "Saving Throws", "type": "string" }
+        { "key": "saving_throws", "label": "Saving Throws", "type": "string" },
+        { "key": "armor_training", "label": "Armor Training", "type": "string" }
       ]
     },
     {
       "slug": "races",
-      "name": "Races",
+      "name": "Species",
       "icon": "fa-users",
       "fields": [
-        { "key": "speed", "label": "Speed", "type": "string" },
         { "key": "size", "label": "Size", "type": "string" },
-        { "key": "ability_bonuses", "label": "Ability Bonuses", "type": "string" }
+        { "key": "speed", "label": "Speed", "type": "string" },
+        { "key": "creature_type", "label": "Creature Type", "type": "string" },
+        { "key": "traits", "label": "Traits", "type": "string" }
+      ]
+    },
+    {
+      "slug": "backgrounds",
+      "name": "Backgrounds",
+      "icon": "fa-scroll",
+      "fields": [
+        { "key": "ability_scores", "label": "Ability Scores", "type": "string" },
+        { "key": "feat", "label": "Feat", "type": "string" },
+        { "key": "skill_proficiencies", "label": "Skill Proficiencies", "type": "string" },
+        { "key": "tool_proficiency", "label": "Tool Proficiency", "type": "string" },
+        { "key": "equipment", "label": "Equipment", "type": "string" }
       ]
     },
     {
@@ -89,7 +103,7 @@
       "category": "character",
       "foundry_actor_type": "character",
       "fields": [
-        { "key": "race", "label": "Race", "type": "string" },
+        { "key": "race", "label": "Species", "type": "string", "foundry_collection": "items", "foundry_item_type": ["race"], "foundry_item_single": true },
         { "key": "class", "label": "Class", "type": "string" },
         { "key": "level", "label": "Level", "type": "number", "foundry_path": "system.details.level", "foundry_writable": false },
         { "key": "alignment", "label": "Alignment", "type": "string" },
@@ -109,7 +123,7 @@
         { "key": "ep", "label": "Electrum (ep)", "type": "number", "foundry_path": "system.currency.ep" },
         { "key": "gp", "label": "Gold (gp)", "type": "number", "foundry_path": "system.currency.gp" },
         { "key": "pp", "label": "Platinum (pp)", "type": "number", "foundry_path": "system.currency.pp" },
-        { "key": "background", "label": "Background", "type": "string" },
+        { "key": "background", "label": "Background", "type": "string", "foundry_collection": "items", "foundry_item_type": ["background"], "foundry_item_single": true },
         { "key": "player_name", "label": "Player Name", "type": "string" }
       ]
     },
@@ -120,21 +134,22 @@
       "icon": "fa-skull",
       "color": "#ef4444",
       "category": "creature",
+      "foundry_actor_type": "npc",
       "fields": [
-        { "key": "size", "label": "Size", "type": "string" },
-        { "key": "type", "label": "Type", "type": "string" },
-        { "key": "alignment", "label": "Alignment", "type": "string" },
-        { "key": "challenge_rating", "label": "Challenge Rating", "type": "string" },
-        { "key": "hit_points", "label": "Hit Points", "type": "string" },
-        { "key": "armor_class", "label": "Armor Class", "type": "string" },
-        { "key": "speed", "label": "Speed", "type": "string" },
-        { "key": "str", "label": "STR", "type": "number" },
-        { "key": "dex", "label": "DEX", "type": "number" },
-        { "key": "con", "label": "CON", "type": "number" },
-        { "key": "int", "label": "INT", "type": "number" },
-        { "key": "wis", "label": "WIS", "type": "number" },
-        { "key": "cha", "label": "CHA", "type": "number" },
-        { "key": "environment", "label": "Environment", "type": "string" },
+        { "key": "size", "label": "Size", "type": "string", "foundry_path": "system.traits.size", "foundry_choices": "DND5E.actorSizes" },
+        { "key": "type", "label": "Type", "type": "string", "foundry_path": "system.details.type", "foundry_format": "type_subtype", "foundry_choices": "DND5E.creatureTypes" },
+        { "key": "alignment", "label": "Alignment", "type": "string", "foundry_path": "system.details.alignment" },
+        { "key": "challenge_rating", "label": "Challenge Rating", "type": "string", "foundry_path": "system.details.cr", "foundry_format": "fraction" },
+        { "key": "hit_points", "label": "Hit Points", "type": "string", "foundry_path": "system.attributes.hp.max", "foundry_format": "integer" },
+        { "key": "armor_class", "label": "Armor Class", "type": "string", "foundry_path": "system.attributes.ac", "foundry_format": "ac_flat" },
+        { "key": "speed", "label": "Speed", "type": "string", "foundry_path": "system.attributes.movement.walk", "foundry_format": "integer" },
+        { "key": "str", "label": "STR", "type": "number", "foundry_path": "system.abilities.str.value" },
+        { "key": "dex", "label": "DEX", "type": "number", "foundry_path": "system.abilities.dex.value" },
+        { "key": "con", "label": "CON", "type": "number", "foundry_path": "system.abilities.con.value" },
+        { "key": "int", "label": "INT", "type": "number", "foundry_path": "system.abilities.int.value" },
+        { "key": "wis", "label": "WIS", "type": "number", "foundry_path": "system.abilities.wis.value" },
+        { "key": "cha", "label": "CHA", "type": "number", "foundry_path": "system.abilities.cha.value" },
+        { "key": "environment", "label": "Environment", "type": "string", "foundry_path": "system.details.environment" },
         { "key": "source", "label": "Source", "type": "string" }
       ]
     },
